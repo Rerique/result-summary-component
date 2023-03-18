@@ -1,0 +1,53 @@
+@use '../globals';
+@use '../util';
+
+.result {
+	background: linear-gradient(
+		globals.$light-slate-blue,
+		globals.$light-royal-blue
+	);
+	padding: 1.5rem;
+	text-align: center;
+	border-radius: 0 0 util.rem(30) util.rem(30);
+
+	@include util.breakpoint(sm) {
+		border-radius: util.rem(30);
+	}
+
+	&__title {
+		color: globals.$light-lavender;
+		font-size: util.rem(18);
+		font-weight: 500;
+	}
+
+	&__points {
+		width: util.rem(140);
+		height: util.rem(140);
+		border-radius: 100%;
+		background: linear-gradient(globals.$violet-blue, globals.$persian-blue);
+		margin: 1.5rem auto;
+		font-size: util.rem(50);
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+
+		span {
+			color: globals.$light-lavender;
+			font-size: util.rem(14);
+		}
+	}
+
+	&__content {
+		width: util.rem(280);
+		margin: 0 auto;
+
+		h3 {
+			font-weight: 500;
+		}
+		p {
+			color: globals.$light-lavender;
+			font-size: util.rem(14);
+			margin: 0.5rem 0;
+		}
+	}
+}

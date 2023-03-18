@@ -1,0 +1,18 @@
+@use '../util';
+@use 'colors';
+
+$font: 'Hanken Grotesk', sans-serif;
+
+body {
+	font-size: util.rem(18);
+	font-family: $font;
+	background-color: colors.$white;
+	color: colors.$white;
+
+	@include util.breakpoint(sm) {
+		max-height: 100vh;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+}

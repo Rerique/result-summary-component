@@ -1,0 +1,54 @@
+@use '../globals';
+@use '../util';
+
+.summary {
+	width: util.rem(325);
+	margin: 1.5rem auto;
+
+	&__title {
+		font-size: util.rem(20);
+		margin-bottom: 1rem;
+		color: globals.$dark-gray-blue;
+	}
+
+	&__content {
+		width: 100%;
+		border-radius: util.rem(10);
+		font-size: util.rem(16);
+		margin: 1rem 0;
+		display: flex;
+		justify-content: flex-start;
+		padding: 0.8rem;
+		gap: util.rem(15);
+		position: relative;
+	}
+
+	&__score {
+		font-weight: 800;
+		position: absolute;
+		right: 0.8rem;
+		color: globals.$dark-gray-blue;
+
+		span {
+			font-weight: normal;
+			color: globals.$light-lavender;
+		}
+	}
+
+	&__button {
+		width: 100%;
+		padding: 0.5rem;
+		color: globals.$white;
+		background: globals.$dark-gray-blue;
+		border-radius: util.rem(30);
+		border: none;
+		cursor: pointer;
+
+		&:hover {
+			background: linear-gradient(
+				globals.$light-slate-blue,
+				globals.$light-royal-blue
+			);
+		}
+	}
+}

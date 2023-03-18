@@ -1,0 +1,11 @@
+@use '../util';
+@use '../globals/colors';
+
+.container {
+	@include util.breakpoint(sm) {
+		width: util.rem(750);
+		border-radius: util.rem(30);
+		display: flex;
+		box-shadow: 5px 5px 25px -5px colors.$pale-blue;
+	}
+}

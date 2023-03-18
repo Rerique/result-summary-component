@@ -1,0 +1,21 @@
+@use '../globals/colors';
+
+.light-red {
+	color: colors.$light-red;
+	background-color: colors.$lighter-red;
+}
+
+.orangey-yellow {
+	color: colors.$orangey-yellow;
+	background-color: colors.$light-orangey-yellow;
+}
+
+.green-teal {
+	color: colors.$green-teal;
+	background-color: colors.$light-green-teal;
+}
+
+.cobalt-blue {
+	color: colors.$cobalt-blue;
+	background-color: colors.$light-cobalt-blue;
+}
