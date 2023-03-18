@@ -11,6 +11,7 @@
 	border-radius: 0 0 util.rem(30) util.rem(30);
 
 	@include util.breakpoint(sm) {
+		width: util.rem(300);
 		border-radius: util.rem(30);
 	}
 
@@ -21,12 +22,13 @@
 	}
 
 	&__points {
-		width: util.rem(140);
-		height: util.rem(140);
+		width: util.rem(160);
+		height: util.rem(160);
 		border-radius: 100%;
 		background: linear-gradient(globals.$violet-blue, globals.$persian-blue);
 		margin: 1.5rem auto;
 		font-size: util.rem(50);
+		font-weight: 700;
 		display: flex;
 		justify-content: center;
 		flex-direction: column;
@@ -38,11 +40,11 @@
 	}
 
 	&__content {
-		width: util.rem(280);
+		width: util.rem(200);
 		margin: 0 auto;
 
 		h3 {
-			font-weight: 500;
+			font-weight: 700;
 		}
 		p {
 			color: globals.$light-lavender;
