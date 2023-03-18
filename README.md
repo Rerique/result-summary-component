@@ -19,7 +19,7 @@ Users should be able to:
 
 ### Screenshot
 
-![result-summary-component](./assets/images/results-summary-component.png)
+![result-summary-component](./assets/images/result-summary-component.png)
 
 ### Links
 
