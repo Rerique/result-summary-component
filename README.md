@@ -28,7 +28,7 @@ Users should be able to:
 ## Built with
 
 - Semantic HTML5 markup
-- SASS
+- SCSS
 - Mobile-first workflow
 
 ## Author
